@@ -1,0 +1,6 @@
+<library path="nav2_pso_planner">
+    <class  name="nav2_pso_planner/PSOPlanner"	type="nav2_pso_planner::PSOPlanner"	
+base_class_type="nav2_core::GlobalPlanner">
+        <description>A PSO-based global planner</description>
+    </class>
+</library>

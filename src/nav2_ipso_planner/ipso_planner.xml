@@ -1,0 +1,6 @@
+<library path="nav2_ipso_planner">
+    <class  name="nav2_ipso_planner/IPSOPlanner"	type="nav2_ipso_planner::IPSOPlanner"	
+base_class_type="nav2_core::GlobalPlanner">
+        <description>A IPSO-based global planner</description>
+    </class>
+</library>

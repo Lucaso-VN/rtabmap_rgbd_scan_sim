@@ -1,0 +1,19 @@
+Planner_server:
+  ros__parameters:
+    expected_planner_plugins: ["PSOPlanner"]
+
+    PSOPlanner:
+      plugin: "nav2_pso_planner::PSOPlanner"
+
+      #----- PSO Parameters -----
+      n_particles: 100       # Particle Swarm Optimization (PSO) Planner
+      n_inherited: 20       # number of inherited particles (Note: need to be less than number of particles - n_particles)
+      pointNum: 5           # number of position points contanined for each particle
+      obs_factor: 0.39      # obstacle factor (geater mean obstacles)
+      max_speed: 40.0         # maximum speed each particles
+      w_inertial: 1.0       # inertial Weight
+      w_social: 2.0         # social Weight
+      w_cognitive: 1.2      # cognitive Weight
+      initposmode: 2        # Set the generation mode for the initial position points of the particle swarm
+      pub_particles: false  # Whether to publish particles
+      pso_max_iter: 5       # maximum iterations

@@ -1,0 +1,20 @@
+rtabmap:
+  ros__parameters:
+    frame_id: "base_link"
+    map_frame_id: "map"
+    odom_frame_id: "odom"
+    subscribe_depth: true
+    depth_topic: /camera/depth/image_raw
+    subscribe_scan: true
+    scan_topic: /scan
+    subscribe_imu: true
+    imu_topic: /demo/imu/data
+    'Grid/CellSize': '0.05'
+    'Grid/3D': 'true'
+    # Optional: octomap export
+    'Octo/Generate': 'true'
+    'Octo/Resolution': '0.1'
+    LaserScanDecimation: 2
+    DepthDecimation: 2
+  
+
